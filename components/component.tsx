@@ -5,6 +5,7 @@
 */
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { JSX, SVGProps } from "react"
 
 export function Component() {
   return (
@@ -41,7 +42,7 @@ export function Component() {
   )
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
